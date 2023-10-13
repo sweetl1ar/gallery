@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Мои галереи</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+    <h1>Create Gallery</h1>
+    <form id="create-gallery-form">
+        <label for="gallery-name">Gallery Name:</label>
+        <input type="text" id="gallery-name" name="gallery-name">
+        <button type="submit">Create Gallery</button>
+    </form>
+
+    <h2>Galleries</h2>
+    <div id="galleries-list"></div>
+
+    <script>
+        document.getElementById("create-gallery-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // отменяем действие по умолчанию
+
+            var galleryName = document.getElementById("gallery-name").value; // получаем название галереи
+
+            // отправляем запрос на сервер для создания галереи
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "create_gallery.php", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // галерея создана успешно, обновляем список галерей на главной странице
+                    loadGalleries();
+                }
+            };
+            xhr.send("gallery_name=" + galleryName);
+        });
+
+        function loadGalleries() {
+            // отправляем запрос на сервер для получения списка галерей
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "get_galleries.php", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // обновляем список галерей на главной странице
+                    document.getElementById("galleries-list").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+
+</html>

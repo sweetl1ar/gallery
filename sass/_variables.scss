@@ -1,0 +1,28 @@
+
+
+$font-family-base:                                              		Hind, sans-serif !default;
+$font-family-sl-icons:                                              	Simple-Line-Icons !default; 
+
+// Colors
+$color-base:                                                            #17bed2 !default;
+$color-white:                                                           #fff !default;
+$color-heading:                                                        	#515769 !default;
+$color-subtitle:                                                        #a6a7aa !default;
+$color-link:                                                        		#81848f !default;
+$color-link-hover:                                                      #999caa !default;
+$color-sky-light:                                                      	#fafafa !default;
+	
+
+$screen-xs-min:                											480px !default;
+
+$screen-sm-min:                											768px !default;
+
+$screen-md-min:                											992px !default;
+
+$screen-lg-min:                											1200px !default;
+
+$screen-lg-med:                     									1260px !default;
+
+$screen-xs-max:             											($screen-sm-min - 1) !default;
+$screen-sm-max:                											($screen-md-min - 1) !default;
+$screen-md-max:                											($screen-lg-min - 1) !default;

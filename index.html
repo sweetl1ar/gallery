@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Gallery Showcase</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body" data-spy="scroll" data-target=".header">
+
+    <header class="header navbar-fixed-top">
+
+        <nav class="navbar" role="navigation">
+            <div class="container">
+
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Навигация</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+
+                    <div class="logo">
+                        <a class="logo-wrap" href="#body">
+                            <img class="logo-img logo-img-main" src="img/logo-dark.PNG" >
+                            <img class="logo-img logo-img-active" src="img/logo.PNG">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-right">
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="#body">Главная</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">О
+                                    сервисе</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="#products">Отзывы клиентов</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="#service">Список возможностей</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="#contact">Контактная информация</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div class="container">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+        </div>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive" src="img/1920x1080/01.png" alt="Slider Image">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-40">
+                            <h2 class="carousel-title">Галерея дома</h2>
+                        </div>
+                        <a href="auth.php" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Попробовать
+                            сейчас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
+                <div class="container">
+                    <div class="carousel-centered">
+                        <div class="margin-b-40">
+                            <h2 class="carousel-title">Передавай работы красиво</h2>
+                        </div>
+                        <a href="auth.php" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Попробовать
+                            сейчас</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="content-lg container">
+
+            <div class="masonry-grid row">
+                <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
+                    <div class="margin-b-60">
+                        <h2>Твоя галерея</h2>
+                        <p>Создавай свою галерею в простом онлайн редакторе, продавай свои работы и получай стабильный
+                            доход.</p>
+                    </div>
+                    <img class="full-width img-responsive wow fadeInUp" src="img/500x500/01.jpg" alt="Portfolio Image"
+                        data-wow-duration=".3" data-wow-delay=".2s">
+                </div>
+                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                    <div class="margin-b-60">
+                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/02.jpg"
+                            alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+                    </div>
+                    <h2>Портфолио работ</h2>
+                    <p>Запусти свой сайт в простом редакторе. Стильно презентуй портфолио клиентам. Добавь прайс,
+                        примеры работ.</p>
+                </div>
+                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                    <div class="margin-t-60 margin-b-60">
+                        <h2>Открытые отзывы</h2>
+                        <p>Любой пользователь всегда может увидеть чужие отзывы, а также оставить свои.</p>
+                    </div>
+                    <img class="full-width img-responsive wow fadeInUp" src="img/500x500/03.jpg" alt="Portfolio Image"
+                        data-wow-duration=".3" data-wow-delay=".4s">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-color-sky-light">
+            <div class="content-lg container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 md-margin-b-60">
+                        <div class="margin-t-50 margin-b-30">
+                            <h2>Почему Мы?</h2>
+                            <p>Мы постоянно стремимся к совершенству, предоставляя нашим клиентам высококачественные
+                                услуги по продивжению. Мы предлагаем широкий спектр услуг, которые отвечают потребностям
+                                наших клиентов.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-7 col-md-offset-2">
+                        <div class="accordion">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a class="panel-title-child" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Качественный контент
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                        aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Все фотографии на нашем сайте проходят проверку на качество и соответствие
+                                            правилам сайта
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed panel-title-child" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Большой выбор фотографий
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            На нашем сайте вы найдете огромное количество фотографий на разные темы и
+                                            жанры.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed panel-title-child" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Удобный поиск
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            С помощью нашего поиска вы легко сможете найти нужную вам фотографию по
+                                            ключевым словам или тегам.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="products">
+        <div class="content-lg container">
+            <div class="row margin-b-40">
+                <div class="col-sm-6">
+                    <h2>Отзывы клиентов</h2>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive" src="img/970x647/Ivan.png" alt="Latest Products Image">
+                    </div>
+                    <h4><a href="#">Селезнев Иван</a> <span class="text-uppercase margin-l-20"></span></h4>
+                    <p>Сайт галерей от фотографа представляет собой удобную и эстетичную платформу для просмотра и
+                        оценки фотографий. Впечатление от сайта положительное. Дизайн сайта очень привлекателен.
+                        Интерфейс сайта интуитивно понятен и легок в использовании. Навигация по сайту очень удобна, что
+                        позволяет быстро и легко находить нужные галереи и фотографии.</p>
+                </div>
+
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive" src="img/970x647/Irina.png" alt="Latest Products Image">
+                    </div>
+                    <h4><a href="#">Кирова Ирина</a> <span class="text-uppercase margin-l-20"></span></h4>
+                    <p>Gallery Showcase - это сервис, который сразу поднимет твой статус и позволит клиенту при первом
+                        клике на ссылку наслаждаться съемкой в достойной подаче. Такая презентация – не тоже самое, что
+                        ссылка на обменник.> Сервис – это то, чего не хватает многим коллегам. Gallery Showcase –
+                        маленький шаг к большому успеху.</p>
+                </div>
+
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="margin-b-20">
+                        <img class="img-responsive" src="img/970x647/Anatolik.png" alt="Latest Products Image">
+                    </div>
+                    <h4><a href="#">Шилов Анатолий</a> <span class="text-uppercase margin-l-20"></span></h4>
+                    <p>Я не придумал интересного отзыва, извините, я тут просто повишу для красоты.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="service">
+        <div class="bg-color-sky-light" data-auto-height="true">
+            <div class="content-lg container">
+                <div class="row margin-b-40">
+                    <div class="col-sm-6">
+                        <h2>Список возможностей</h2>
+                    </div>
+                </div>
+
+                <div class="row row-space-1 margin-b-2">
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="service" data-height="height">
+                            <div class="service-info">
+                                <h3>Красивая подача</h3>
+                                <p class="margin-b-5">Клиенты будут удивлены профессиональной подачей.</p>
+                            </div>
+                            <a href="#" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-2">
+                        <div class="service bg-color-base" data-height="height">
+                            <div class="service-info">
+                                <h3 class="color-white">Сайт-портфолио</h3>
+                                <p class="color-white margin-b-5">Создайте красивый сайт-портфолио в визуальном
+                                    редакторе за пару часов.</p>
+                            </div>
+                            <a href="#" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="service" data-height="height">
+                            <div class="service-info">
+                                <h3>Отзывы о вашей работе</h3>
+                                <p class="margin-b-5">Клиент сможет оставить отзыв не покидая просмотр галереи.</p>
+                            </div>
+                            <a href="#" class="content-wrapper-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="section-seperator">
+            <div class="content-lg container">
+                <div class="row">
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <h3><a href="#">Москва</a> <span class="text-uppercase margin-l-20">Главный офис</span></h3>
+                        <p>Фактический адрес: 000000, г. Москва, , ул. Неизвестная, д. 00, кв. 00</p>
+                        <ul class="list-unstyled contact-list">
+                            <li><i class="margin-r-10 color-base icon-call-out"></i> +7 (999) 999 - 99 - 99</li>
+                            <li><i class="margin-r-10 color-base icon-envelope"></i> gshowcase@test.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="section-seperator">
+                <div class="content-md container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a href="gallery.php">Подписька на новости(Я тут для красоты)</a></li>
+                                <li class="footer-list-item"><a href="policy.html">Пользовательское соглашение</a></li>
+                                <li class="footer-list-item"><a href="agreement.html">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="footer-logo" src="img/logo-dark.PNG">
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="margin-b-0">All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
+
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/google-map.min.js" type="text/javascript"></script>
+
+</body>
+
+</html>

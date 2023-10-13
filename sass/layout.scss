@@ -1,0 +1,26 @@
+@import 'mixins';
+@import 'variables'; 
+
+@import 'base/base';
+
+@import 'components/accordion'; 
+@import 'components/button'; 
+
+
+@import 'gui/pricing'; 
+@import 'gui/service';
+@import 'gui/work'; 
+
+
+@import 'layout/footer'; 
+@import 'layout/header'; 
+
+@import 'pages/contact'; 
+
+
+@import 'plugins/back-to-top'; 
+@import 'plugins/bootstrap-components'; 
+@import 'plugins/swiper';
+
+@import 'utils/colors'; 
+@import 'utils/helpers'; 
